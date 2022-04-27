@@ -18,7 +18,6 @@ export const getStaticProps = async ({ params }) => {
     `https://jsonplaceholder.typicode.com/posts/${params.postId}`
   );
   const jsonPost = await post.json();
-  console.log(jsonPost);
   return {
     props: {
       post: jsonPost || null,

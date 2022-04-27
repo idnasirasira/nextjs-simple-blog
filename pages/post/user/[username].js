@@ -5,7 +5,6 @@ const Username = (props) => {
 
   const { username } = router.query;
 
-  console.log(router);
   return (
     <div>
       <h1>Post By User {username}</h1>
